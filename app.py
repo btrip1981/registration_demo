@@ -3,9 +3,9 @@ from flask_mysqldb import MySQL
 
 app = Flask(__name__)
 
-app.config['MYSQL_HOST'] = 'localhost'
-app.config['MYSQL_USER'] = 'newuser'
-app.config['MYSQL_PASSWORD'] = '1a2S3d4F'
+app.config['MYSQL_HOST'] = ''
+app.config['MYSQL_USER'] = ''
+app.config['MYSQL_PASSWORD'] = ''
 app.config['MYSQL_DB'] = 'demo_registration'
 
 mysql = MySQL(app)
