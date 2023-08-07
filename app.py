@@ -3,6 +3,7 @@ from flask_mysqldb import MySQL
 
 app = Flask(__name__)
 
+#config db
 app.config['MYSQL_HOST'] = ''
 app.config['MYSQL_USER'] = ''
 app.config['MYSQL_PASSWORD'] = ''
@@ -10,11 +11,12 @@ app.config['MYSQL_DB'] = 'demo_registration'
 
 mysql = MySQL(app)
 
-
+# create app route for index
 @app.route('/')
 def index():
     return render_template('index.html')
 
+# create app route for signup, submit data to database and redirect to dashboard
 @app.route('/signup', methods=['GET', 'POST'])
 def signup():
     if request.method == "POST":
@@ -36,7 +38,7 @@ def signup():
 
     return render_template('signup.html')
 
-
+# create app route for dashboard and def user first name for personalized greeting
 @app.route('/dashboard')
 def dashboard():
     fname = request.args.get('fname', '')
