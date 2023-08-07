@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+<style>
+#container h1 {
+      width: 100%;
+      height: auto;
+      margin: 0px;
+      position: absolute;
+      text-align: center;
+      background-color: rgba(26, 81, 157, 0.7);
+      color: white;
+      padding: 5px;
+    }
+    .container2{
+      width: 100%;
+      height: auto;
+      margin: 0px;
+      position: absolute;
+      text-align: center;
+      background-color: rgba(26, 81, 157, 0.7);
+      color: white;
+      padding: 5px;
+      border-radius: 25px;
+    }
+
+    h2{
+      color: blue;
+      text-align: center;
+      }
+
+      h3{
+      color: blue;
+      text-align: center;
+      }
+
+    img{
+      top: 0px;
+      bottom: 0px;
+      padding: 2px;
+      margin: 0px;
+      position:relative;
+      width: 40px;
+      height: 40px;
+    }
+
+.button {
+  background-color: #88ADE0;
+  border-radius: 15px;
+  border-color: white;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button:hover {background-color: #052C61}
+
+.button:active {
+  background-color: #052C61;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+ul {
+  list-style-type: none;
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+background: rgb(2,0,36);
+background: linear-gradient(57deg, rgba(26,81,157,1) 0%, rgba(26,81,157,1) 8%, rgba(26,81,157,0) 100%);
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #052C61;
+}
+  </style>
+</head>
+<body>
+
+<div id="container">
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#">Site page</a></li>
+  <li><a href="#">Site page</a></li>
+  <li><a href="#">Site page</a></li>
+</ul>
+    <h1>Submit Your Information</h1>
+</div><img src="https://i.ibb.co/TW7g83k/Untitled-2.png" alt="logo">
+
+<h2>Enter data and click "Signup" This data will then be stored in a database and re-direct to dashboard </h2>
+<form method="POST" action="/signup">
+   <input id="fname" name="fname" type="text" placeholder="First Name" required>
+   <input id="lname" name="lname" type="text" placeholder="Last Name" required>
+   <input id="email" name="email" type="email" placeholder="Email" required>
+   <input id="phone" name="phone" type="tel" placeholder="Phone" required>
+   <button type="submit" class="button">Signup</button>
+</form>
+</body>
+
+</html>
